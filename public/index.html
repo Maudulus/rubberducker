@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/javascripts/vendor/jquery.js" type="text/javascript"></script>
+    <link rel=stylesheet href="/stylesheets/css.css" type="text/css" />
+
+    <title>RubberDucker</title>
+  </head>
+  <h1>RubberDucker</h1>
+ <body background="/images/rubberduck.gif">
+
+    <p id="message_startduck" >Welcome to RubberDucker! Type your questions and get quacktacular advice </p>
+
+  <div id="placeholder"> </div>
+  <div id="console">
+
+  <form onsubmit="return false;">
+    <center>
+      <input type="text" id="command_line" size="50" autofocus="autofocus" />
+    </center>
+  </form>
+
+
+  <script src="/javascripts/rubberduck.js" type="text/javascript"></script>
+  <div id="responses">
+    <p id="helper">Wow, that sounds like a difficult situation...tell me more.</p>
+    <p id="regex">Really. Perhaps the website Rubular would assist you better.</p>
+  </div>
+
+  <ul id="random">
+    <li>Wow, that sounds like a difficult situation...tell me more.<br></li>
+
+    <li>Hmmm, did you consult the oracle? </li>
+    <br>
+    <li>Really...look again.</li>
+    <br>
+    <li>Definately a frustrating problem. Have you tried pry?</li>
+    <br>
+    <li>Item 4</li>
+    <br>
+    <li>Item 5</li>
+    <br>
+    <li>Item 6</li>
+</ul>
+  </body>
+</html>
