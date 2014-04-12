@@ -26,14 +26,20 @@ var randomitem = list[randomnum];
     }
 
     else if (input.toLowerCase().indexOf("ruby") > -1) {
+      var quote = $("<blockquote>").text(input);
+      $("#placeholder").before(quote);
       $("#ruby").clone().insertBefore("#placeholder").fadeIn(1000);
     }
 
     else if (input.toLowerCase().indexOf("rails") > -1) {
+      var quote = $("<blockquote>").text(input);
+      $("#placeholder").before(quote);
       $("#rails").clone().insertBefore("#placeholder").fadeIn(1000);
     }
 
     else if (input.toLowerCase().indexOf("jq") > -1) {
+      var quote = $("<blockquote>").text(input);
+      $("#placeholder").before(quote);
       $("#jquery").clone().insertBefore("#placeholder").fadeIn(1000);
     }
 
