@@ -4,8 +4,6 @@
 //SETS ALL VARIABLES FOR RubberDucking!
 //
 
-
-
 $(document).ready(function() {
   $("#compass").fadeIn(3000);
   $("#message_begin").fadeIn(3000);
@@ -13,11 +11,10 @@ $(document).ready(function() {
   $("#command_line").fadeIn(3000);
   $("form").submit(function() {
     var input = $("#command_line").val();
-    var question = $("#command_line").toArray();
-var list = $("ul li").toArray();
-var elemlength = list.length;
-var randomnum = Math.floor(Math.random()*elemlength);
-var randomitem = list[randomnum];
+    var list = $("ul li").toArray();
+    var elemlength = list.length;
+    var randomnum = Math.floor(Math.random()*elemlength);
+    var randomitem = list[randomnum];
 
     if (input.toLowerCase().indexOf("regex") > -1) {
       var quote = $("<blockquote>").text(input);
@@ -49,18 +46,10 @@ var randomitem = list[randomnum];
       $(randomitem).clone().insertBefore("#placeholder").fadeIn(1000);
     }
 
-
-
-
-"random string is" +
     $("#console").scrollTop($("#console")[0].scrollHeight);
     $("#command_line").val("");
     });
 
-
-
   // $(randomitem).css("display", "block");
-
-
 });
 
