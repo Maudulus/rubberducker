@@ -1,12 +1,30 @@
-<ul id="chat">
-  <li>i typed something</li>
-  <li>the computer responded with something</li>
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/javascripts/vendor/jquery.js" type="text/javascript"></script>
+    <link rel=stylesheet href="/stylesheets/css.css" type="text/css" />
 
-<form action="#">
-  <input type="text" name="message" />
-  <input type="submit" value="Send" />
-</form>
+    <title>RubberDucker</title>
+  </head>
+  <h1>RubberDucker</h1>
+  <body>
 
-<script src="/javascripts/vendor/jquery.js" type="text/javascript"></script>
-<script src="/javascripts/rubberduck.js" type="text/javascript"></script>
+    <p id="message_startduck" >Welcome to RubberDucker! Type your questions and get quacktacular advice </p>
+
+  <div id="placeholder"> </div>
+  <div id="console">
+
+  <form onsubmit="return false;">
+    <center>
+      <input type="text" id="command_line" size="50" autofocus="autofocus" />
+    </center>
+  </form>
+
+
+  <script src="/javascripts/rubberduck.js" type="text/javascript"></script>
+  <div id="responses">
+    <p id="hi">Wow, that sounds like a difficult situation...tell me more.</p>
+    <p id="question1">Really. Did you check your error messages?</p>
+  </div>
+  </body>
+</html>
