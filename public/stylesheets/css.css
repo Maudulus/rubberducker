@@ -3,8 +3,40 @@
   display: none;
   }
 
+p {
+  display: none;
+  list-style-type: none;
+  font-family: American Typewriter;
+  color: black;
+  text-align: center;
+}
 li {
   display: none;
   list-style-type: none;
+  font-family: American Typewriter;
+  color: black;
+  text-align: center;
+}
 
+body {
+  background-image:url("/rubberduck.gif");
+}
+
+h1 {
+  font-family: futura;
+  color: black;
+  font-size: 62px;
+  text-align: center;
+}
+
+h3 {
+  font-family: American Typewriter;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+div {
+  text-align: center;
 }
