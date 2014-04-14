@@ -1,7 +1,12 @@
 source 'https://rubygems.org'
-gem 'shotgun'
-gem 'pg'
-gem 'sinatra'
-gem "activerecord"
-gem "sinatra-activerecord"
 
+gem 'sinatra'
+gem 'sinatra-activerecord'
+gem 'activerecord', '4.0.4'
+gem 'pg'
+gem 'rake'
+
+group :test, :development do
+  gem 'pry'
+  gem 'shotgun'
+end

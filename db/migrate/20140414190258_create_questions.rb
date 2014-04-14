@@ -1,8 +1,7 @@
-class Questions < ActiveRecord::Migration
+class CreateQuestions < ActiveRecord::Migration
   def change
     create_table :questions do |t|
       t.text :body
-      t.text :response
 
       t.timestamps
     end
