@@ -5,7 +5,6 @@
 //
 
 $(document).ready(function() {
-  $("#compass").fadeIn(3000);
   $("#message_begin").fadeIn(3000);
   $("#area_main").fadeIn(3000);
   $("#command_line").fadeIn(3000);
