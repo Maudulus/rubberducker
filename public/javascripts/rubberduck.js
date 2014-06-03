@@ -44,7 +44,12 @@ $(document).ready(function() {
       $("#placeholder").before(quote);
       $(randomitem).clone().insertBefore("#placeholder").fadeIn(1000);
     }
-
+    try {
+    var msg = new SpeechSynthesisUtterance($(randomitem).text());
+    window.speechSynthesis.speak(msg);
+    } catch(e) {
+      console.log('oh ho')
+    }
     $("#console").scrollTop($("#console")[0].scrollHeight);
     $("#command_line").val("");
     });
